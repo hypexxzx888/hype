@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HYPE STORE - Elegante e Chamativo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #121218);
+      font-family: 'Inter', sans-serif;
+      color: #e0e0e0;
+    }
+
+    header {
+      border-bottom: 2px solid #44475a;
+    }
+
+    h1 {
+      font-weight: 900;
+      color: #8be9fd;
+      text-shadow: 0 0 8px #50c8f9aa;
+    }
+
+    h2 {
+      color: #50c8f9;
+      border-bottom: 2px solid #50c8f9;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .card {
+      background: #282a36;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow:
+        0 4px 8px rgb(80 200 249 / 0.25),
+        inset 0 0 6px rgb(80 200 249 / 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 12px 24px rgb(80 200 249 / 0.4),
+        inset 0 0 12px rgb(80 200 249 / 0.6);
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #ff79c6;
+      margin-top: 0.5rem;
+    }
+
+    .stock {
+      font-weight: 600;
+      color: #50fa7b;
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: white;
+      font-weight: 700;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      margin-top: 1rem;
+      text-align: center;
+      text-decoration: none;
+      box-shadow:
+        0 0 8px #25d366;
+      transition: box-shadow 0.3s ease;
+      display: inline-block;
+    }
+    .btn-whatsapp:hover {
+      box-shadow:
+        0 0 15px #00ff99,
+        0 0 30px #00ff99;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto 4rem auto;
+      padding: 0 1rem;
+    }
+
+    section + section {
+      margin-top: 3rem;
+    }
+
+    .grid-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #6272a4;
+      font-size: 0.9rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid #44475a;
+    }
+  </style>
+</head>
+<body>
+
+<header class="py-8 text-center">
+  <h1 class="text-5xl">HYPE STORE</h1>
+  <p class="mt-2 text-gray-400 text-lg">Os melhores itens virtuais com preços justos e visual elegante</p>
+</header>
+
+<main>
+  <section>
+    <h2>Roube um Brainrot</h2>
+    <div class="grid-products">
+      <!-- La Grande + Gato Mutação -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-pink-400">La Grande + Gato Mutação</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 30,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Quero+comprar+La+Grande+Brainrot+com+Gato+Mutação"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- Los Traleritos Gold -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-yellow-400">Los Traleritos Gold</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 15,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Quero+comprar+Los+Traleritos+Gold"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- Los Traleritos Normal -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-yellow-300">Los Traleritos Normal</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 10,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Quero+comprar+Los+Traleritos+Normal"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- La Vaca Blood -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-red-400">La Vaca Blood</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 8,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Tenho+interesse+na+La+Vaca+Blood"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- La Vaca Tacos -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-green-400">La Vaca Tacos</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 7,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Tenho+interesse+na+La+Vaca+Tacos"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Grow a Garden</h2>
+    <div class="grid-products">
+      <!-- Mimic Octopus -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-teal-400">Mimic Octopus</h3>
+          <p class="stock">Estoque: 1</p>
+          <p class="price">R$ 30,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Tenho+interesse+em+comprar+Mimic+Octopus"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- 7.5 Trilhões -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-cyan-400">7.5 Trilhões</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 7,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Tenho+interesse+em+comprar+7.5T"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- 60 Trilhões -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-cyan-400">60 Trilhões</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 12,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Tenho+interesse+em+comprar+60T"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+
+      <!-- 650 Trilhões -->
+      <div class="card">
+        <div>
+          <h3 class="text-xl font-semibold text-cyan-400">650 Trilhões</h3>
+          <p class="stock">Estoque: Disponível</p>
+          <p class="price">R$ 20,00</p>
+        </div>
+        <a href="https://wa.me/5511984071037?text=Ol%C3%A1%21+Tenho+interesse+em+comprar+650T"
+           target="_blank" class="btn-whatsapp">Comprar via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 HYPE STORE • Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
